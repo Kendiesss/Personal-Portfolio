@@ -132,29 +132,55 @@ export default function Hero() {
               {/* Headshot SVG placeholder inside elegant badge frame */}
               <div className="my-auto flex flex-col justify-center items-center space-y-4">
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 border border-emerald-500/30 flex items-center justify-center relative overflow-hidden group">
-                  {/* Decorative headshot grid overlay */}
-                  <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
-                  
-                  {/* Human shape stylized shadow SVG */}
-                  <svg
-                    className="w-20 h-20 md:w-26 md:h-26 text-emerald-400/60"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
+                  {personalDetails.profileImageUrl && !personalDetails.profileImageUrl.startsWith("[") ? (
+                    <img
+                      src={personalDetails.profileImageUrl}
+                      alt={personalDetails.name}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      onError={(e) => {
+                        e.currentTarget.style.display = "none";
+                        // Fallback indicator
+                        const parent = e.currentTarget.parentElement;
+                        if (parent) {
+                          const errDiv = document.createElement("div");
+                          errDiv.className = "absolute inset-0 bg-[#0e1628] flex flex-col items-center justify-center text-red-400 font-mono text-center px-4 text-2xs";
+                          errDiv.innerText = "Error loading headshot image";
+                          parent.appendChild(errDiv);
+                        }
+                      }}
+                    />
+                  ) : (
+                    <>
+                      {/* Decorative headshot grid overlay */}
+                      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                      
+                      {/* Human shape stylized shadow SVG */}
+                      <svg
+                        className="w-20 h-20 md:w-26 md:h-26 text-emerald-400/60"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                    </>
+                  )}
                 </div>
                 <div className="text-center">
                   <h3 className="font-display font-medium text-sm text-gray-300">
-                    [YOUR_HEADSHOT_OR_AVATAR]
+                    {personalDetails.profileImageUrl && !personalDetails.profileImageUrl.startsWith("[") 
+                      ? "Profile Image Active" 
+                      : "[YOUR_HEADSHOT_OR_AVATAR]"}
                   </h3>
                   <p className="font-mono text-2xs text-gray-500 uppercase tracking-wider mt-1">
-                    Replace this SVG frame with your real picture URL later
+                    {personalDetails.profileImageUrl && !personalDetails.profileImageUrl.startsWith("[") 
+                      ? "Successfully loaded" 
+                      : "Replace this SVG frame with your real picture URL later"}
                   </p>
                 </div>
               </div>

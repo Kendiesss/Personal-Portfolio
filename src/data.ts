@@ -8,6 +8,7 @@ export const personalDetails: PersonalDetails = {
   tagline: "Building High-Performance & Seamless Web Experiences",
   role: "Software Engineer",
   shortDescription: "[YOUR_SHORT_DESCRIPTION]",
+  profileImageUrl: "[YOUR_PROFILE_IMAGE_URL]",
 };
 
 export const experiences: Experience[] = [

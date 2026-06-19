@@ -36,4 +36,5 @@ export interface PersonalDetails {
   shortDescription: string;
   tagline: string;
   role: string;
+  profileImageUrl?: string;
 }
