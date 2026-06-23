@@ -126,7 +126,6 @@ export default function Hero() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500/40"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500/40"></div>
                 </div>
-                <span className="font-mono text-xs text-gray-500 uppercase tracking-widest">headshot_placeholder.svg</span>
               </div>
 
               {/* Headshot SVG placeholder inside elegant badge frame */}
@@ -145,7 +144,6 @@ export default function Hero() {
                         if (parent) {
                           const errDiv = document.createElement("div");
                           errDiv.className = "absolute inset-0 bg-[#0e1628] flex flex-col items-center justify-center text-red-400 font-mono text-center px-4 text-2xs";
-                          errDiv.innerText = "Error loading headshot image";
                           parent.appendChild(errDiv);
                         }
                       }}
@@ -170,18 +168,6 @@ export default function Hero() {
                       </svg>
                     </>
                   )}
-                </div>
-                <div className="text-center">
-                  <h3 className="font-display font-medium text-sm text-gray-300">
-                    {personalDetails.profileImageUrl && !personalDetails.profileImageUrl.startsWith("[") 
-                      ? "Profile Image Active" 
-                      : "[YOUR_HEADSHOT_OR_AVATAR]"}
-                  </h3>
-                  <p className="font-mono text-2xs text-gray-500 uppercase tracking-wider mt-1">
-                    {personalDetails.profileImageUrl && !personalDetails.profileImageUrl.startsWith("[") 
-                      ? "Successfully loaded" 
-                      : "Replace this SVG frame with your real picture URL later"}
-                  </p>
                 </div>
               </div>
 

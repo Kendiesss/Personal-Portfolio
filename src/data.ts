@@ -1,4 +1,5 @@
 import { PersonalDetails, Experience, EducationEntry, Project } from "./types";
+import avatarImage from "./assets/images/avatar.jpg";
 
 export const personalDetails: PersonalDetails = {
   name: "JOHN KEN B. ANGELES",
@@ -8,7 +9,7 @@ export const personalDetails: PersonalDetails = {
   tagline: "Building High-Performance & Seamless Web Experiences",
   role: "Software Engineer",
   shortDescription: "[YOUR_SHORT_DESCRIPTION]",
-  profileImageUrl: "[YOUR_PROFILE_IMAGE_URL]",
+  profileImageUrl: avatarImage,
 };
 
 export const experiences: Experience[] = [
