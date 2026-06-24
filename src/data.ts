@@ -1,6 +1,13 @@
 import { PersonalDetails, Experience, EducationEntry, Project } from "./types";
 import avatarImage from "./assets/images/avatar.jpg";
 import cyberseLink from "./assets/images/CyberseLink.png";
+import aetherSpend from "./assets/images/AetherSpend.png";
+import webAI from "./assets/images/WebAI.png";
+import cyberFitness from "./assets/images/cyberFitness.png";
+import creatives from "./assets/images/creatives.png";
+import cryptPh from "./assets/images/cryptPh.png";
+
+
 
 export const personalDetails: PersonalDetails = {
   name: "JOHN KEN B. ANGELES",
@@ -71,18 +78,58 @@ export const projectsList: Project[] = [
   },
   {
     id: "proj-2",
-    title: "[PROJECT_TITLE_2]",
-    description: "[PROJECT_DESCRIPTION_2]",
-    previewImageUrl: "[PROJECT_PREVIEW_IMAGE_URL_2]",
-    projectLink: "[PROJECT_LINK_2]",
-    tags: ["Node.js", "Express", "PostgreSQL"],
+    title: "AetherSpend",
+    description: "Budget Tracker AI Web App",
+    previewImageUrl: aetherSpend,
+    projectLink: "https://aether-spend.vercel.app",
+    tags: ["React", "TypeScript", "Tailwind CSS"],
   },
   {
     id: "proj-3",
-    title: "[PROJECT_TITLE_3]",
-    description: "[PROJECT_DESCRIPTION_3]",
-    previewImageUrl: "[PROJECT_PREVIEW_IMAGE_URL_3]",
-    projectLink: "[PROJECT_LINK_3]",
+    title: "WebAI",
+    description: "Personal Interactive Web AI",
+    previewImageUrl: webAI,
+    projectLink: "https://ai-web-five-swart.vercel.app",
+    tags: ["React", "TypeScript", "Tailwind CSS"],
+  },
+    {
+    id: "proj-4",
+    title: "CYBER FITNESS",
+    description: "Online Fitness Web App",
+    previewImageUrl: cyberFitness,
+    projectLink: "https://cyber-fitness.vercel.app",
     tags: ["Next.js", "GraphQL", "Tailwind CSS"],
   },
+    {
+    id: "proj-5",
+    title: "Personal Creatives Portfolio",
+    description: "A personal portfolio used for showcasing the previous creative projects specifically, publication materials.",
+    previewImageUrl: creatives,
+    projectLink: "https://portfolio-tau-three-69.vercel.app",
+    tags: ["Next.js", "GraphQL", "Tailwind CSS"],
+  },
+    {
+    id: "proj-6",
+    title: "CryptPH",
+    description: "your one-stop platform for mastering cryptocurrency trading with cryptocurrency data, educational content, and accessible tools.",
+    previewImageUrl: cryptPh,
+    projectLink: "https://crypt-ph.vercel.app",
+    tags: ["Next.js", "GraphQL", "Tailwind CSS"],
+  },
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
