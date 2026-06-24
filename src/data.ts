@@ -1,5 +1,6 @@
 import { PersonalDetails, Experience, EducationEntry, Project } from "./types";
 import avatarImage from "./assets/images/avatar.jpg";
+import cyberseLink from "./assets/images/CyberseLink.png";
 
 export const personalDetails: PersonalDetails = {
   name: "JOHN KEN B. ANGELES",
@@ -15,26 +16,15 @@ export const personalDetails: PersonalDetails = {
 export const experiences: Experience[] = [
   {
     id: "exp-1",
-    jobTitle: "[JOB_TITLE_1]",
-    companyName: "[COMPANY_NAME_1]",
-    duration: "[DURATION_OR_DATES_1]",
+    jobTitle: "Software Engineer",
+    companyName: "iWave Inc.",
+    duration: "2025 to Present",
     responsibilities: [
-      "[JOB_RESPONSIBILITIES/ACHIEVEMENTS_1_BULLET_A]",
-      "[JOB_RESPONSIBILITIES/ACHIEVEMENTS_1_BULLET_B]",
-      "[JOB_RESPONSIBILITIES/ACHIEVEMENTS_1_BULLET_C]",
+      "Full Stack Web Developer",
+      "Full Stack Mobile Developer",
+      "API and System Testing",
     ],
-  },
-  {
-    id: "exp-2",
-    jobTitle: "[JOB_TITLE_2]",
-    companyName: "[COMPANY_NAME_2]",
-    duration: "[DURATION_OR_DATES_2]",
-    responsibilities: [
-      "[JOB_RESPONSIBILITIES/ACHIEVEMENTS_2_BULLET_A]",
-      "[JOB_RESPONSIBILITIES/ACHIEVEMENTS_2_BULLET_B]",
-      "[JOB_RESPONSIBILITIES/ACHIEVEMENTS_2_BULLET_C]",
-    ],
-  },
+  }
 ];
 
 export const educationList: EducationEntry[] = [
@@ -73,10 +63,10 @@ export const softSkills: string[] = [
 export const projectsList: Project[] = [
   {
     id: "proj-1",
-    title: "[PROJECT_TITLE_1]",
-    description: "[PROJECT_DESCRIPTION_1]",
-    previewImageUrl: "[PROJECT_PREVIEW_IMAGE_URL_1]",
-    projectLink: "[PROJECT_LINK_1]",
+    title: "Cyberse Link",
+    description: "The next generation AI communication platform. Connect, collaborate, and evolve in the digital frontier.",
+    previewImageUrl: cyberseLink,
+    projectLink: "https://cyberse-link.vercel.app",
     tags: ["React", "TypeScript", "Tailwind CSS"],
   },
   {
