@@ -16,7 +16,7 @@ export const personalDetails: PersonalDetails = {
   linkedInUrl: "https://www.linkedin.com/in/john-ken-angeles-6b6b99268/",
   tagline: "Building High-Performance & Seamless Web Experiences",
   role: "Software Engineer",
-  shortDescription: "[YOUR_SHORT_DESCRIPTION]",
+  shortDescription: "Software Engineer with a strong foundation in full-stack development, project management, and AI integration. Passionate about building high-performance web applications and leveraging AI technologies to deliver efficient, scalable solutions.",
   profileImageUrl: avatarImage,
 };
 
