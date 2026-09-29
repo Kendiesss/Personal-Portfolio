@@ -57,9 +57,6 @@ export default function About() {
               {/* Added a prompt for user reference so they know what to put there */}
               <div className="mt-6 pt-6 border-t border-gray-800/60 flex items-start gap-3">
                 <CheckCircle2 className="h-5 w-5 text-emerald-400 shrink-0 mt-0.5" />
-                <p className="text-xs text-gray-500 leading-relaxed font-mono uppercase tracking-wide">
-                  Template tip: You can search and replace the <span className="text-emerald-400">[YOUR_SHORT_DESCRIPTION]</span> placeholder inside the <span className="text-emerald-400">src/data.ts</span> file to change your bio.
-                </p>
               </div>
             </div>
           </div>
