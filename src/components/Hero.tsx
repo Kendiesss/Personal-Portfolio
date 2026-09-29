@@ -1,5 +1,5 @@
 import { personalDetails } from "../data";
-import { Github, Linkedin, Mail, ArrowRight, Star } from "lucide-react";
+import { Github, Linkedin, Star } from "lucide-react";
 import { motion } from "motion/react";
 
 export default function Hero() {
@@ -93,15 +93,6 @@ export default function Hero() {
             >
               <Linkedin className="h-5 w-5" />
               LinkedIn Profile
-            </a>
-            <a
-              id="hero-cta-email"
-              href={`mailto:${personalDetails.email}`}
-              className="flex items-center justify-center gap-2 px-6 py-3.5 bg-transparent hover:bg-gray-800/30 border border-gray-800 hover:border-gray-700 text-sm font-semibold tracking-wide rounded-xl text-gray-300 hover:text-white transition-all duration-200"
-            >
-              <Mail className="h-5 w-5" />
-              Send Email
-              <ArrowRight className="h-4 w-4" />
             </a>
           </motion.div>
         </div>

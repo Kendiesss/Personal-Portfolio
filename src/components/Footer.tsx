@@ -20,9 +20,6 @@ export default function Footer() {
             </span>
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
           </div>
-          <p id="footer-tagline" className="text-xs text-gray-500 max-w-sm leading-relaxed">
-            Beautifully designed personal portfolio template. Ready for production, search and replace the placeholders.
-          </p>
         </div>
 
         {/* Right Column (Social Icons, scroll to top trigger) */}
@@ -73,7 +70,6 @@ export default function Footer() {
 
       <div className="max-w-6xl mx-auto px-6 mt-8 pt-8 border-t border-gray-900/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-4xs text-gray-600 font-mono uppercase tracking-widest relative z-10">
         <span>© {currentYear} {personalDetails.name}. All rights reserved.</span>
-        <span>Crafted with template placeholder indicators</span>
       </div>
     </footer>
   );

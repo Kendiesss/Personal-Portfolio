@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { personalDetails } from "../data";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,14 +54,6 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <a
-            id="nav-cta-contact"
-            href={`mailto:${personalDetails.email}`}
-            className="flex items-center gap-1.5 px-4 py-2 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 hover:border-emerald-500/50 rounded-full text-xs font-semibold tracking-wide text-emerald-400 uppercase transition-all duration-200"
-          >
-            Get In Touch
-            <ArrowUpRight className="h-3.5 w-3.5" />
-          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -93,14 +85,6 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <a
-              id="nav-mobile-cta"
-              href={`mailto:${personalDetails.email}`}
-              onClick={() => setIsOpen(false)}
-              className="block text-center px-4 py-2.5 bg-emerald-500 hover:bg-emerald-600 rounded-lg text-sm font-semibold text-white tracking-wide transition-all duration-200"
-            >
-              Get In Touch
-            </a>
           </div>
         </div>
       )}

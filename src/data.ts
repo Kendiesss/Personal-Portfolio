@@ -25,46 +25,55 @@ export const experiences: Experience[] = [
     id: "exp-1",
     jobTitle: "Software Engineer",
     companyName: "iWave Inc.",
-    duration: "2025 to Present",
+    duration: "July 2025 to Present",
     responsibilities: [
-      "Full Stack Web Developer",
-      "Full Stack Mobile Developer",
+      "Web Support",
       "API and System Testing",
     ],
-  }
+  },
+    {
+    id: "exp-2",
+    jobTitle: "IT Intern",
+    companyName: "iWave Inc.",
+    duration: "February 2025 to June 2025",
+    responsibilities: [
+      "Full Java Stack Web Developer",
+      "Full Java Stack Mobile Developer",
+      "API and System Testing",
+    ],
+  },
 ];
 
 export const educationList: EducationEntry[] = [
   {
     id: "edu-1",
-    degree: "[DEGREE/CERTIFICATION_1]",
-    schoolName: "[SCHOOL/INSTITUTION_NAME_1]",
-    graduationYear: "[GRADUATION_YEAR_1]",
-  },
-  {
-    id: "edu-2",
-    degree: "[DEGREE/CERTIFICATION_2]",
-    schoolName: "[SCHOOL/INSTITUTION_NAME_2]",
-    graduationYear: "[GRADUATION_YEAR_2]",
+    degree: "INFORMATION TECHNOLOGY",
+    schoolName: "University of Santo Tomas",
+    graduationYear: "June 2025",
   },
 ];
 
 export const technicalSkills: string[] = [
-  "[TECH_SKILL_1_e.g._JavaScript]",
-  "[TECH_SKILL_2_e.g._React]",
-  "[TECH_SKILL_3_e.g._TypeScript]",
-  "[TECH_SKILL_4_e.g._TailwindCSS]",
-  "[TECH_SKILL_5_e.g._Node.js]",
-  "[TECH_SKILL_6_e.g._Python]",
+  "Java",
+  "JavaScript",
+  "ReactJS",
+  "Tailwind CSS",
+  "React Native",
+  "Python",
+  "SQL",
+  "AI Engineering and Prompting"
 ];
 
 export const softSkills: string[] = [
-  "[SOFT_SKILL_1_e.g._Communication]",
-  "[SOFT_SKILL_2_e.g._Problem-Solving]",
-  "[SOFT_SKILL_3_e.g._Team_Leadership]",
-  "[SOFT_SKILL_4_e.g._Continuous_Learning]",
-  "[SOFT_SKILL_5_e.g._Adaptability]",
-  "[SOFT_SKILL_6_e.g._Critical_Thinking]",
+  "Team Leadership and Motivation",
+  "Problem Solving",
+  "Communication",
+  "Continuous_Learning",
+  "Adaptability",
+  "Critical Thinking",
+  "Stakeholder & Expectation Management",
+  "Time Management & Prioritization",
+  "Conflict Resolution & Negotiation"
 ];
 
 export const projectsList: Project[] = [
