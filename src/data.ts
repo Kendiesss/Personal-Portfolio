@@ -51,6 +51,24 @@ export const educationList: EducationEntry[] = [
     schoolName: "University of Santo Tomas",
     graduationYear: "June 2025",
   },
+    {
+    id: "edu-2",
+    degree: "Google Project Management Professional Certificate",
+    schoolName: "Google",
+    graduationYear: "March 2026",
+  },
+      {
+    id: "edu-3",
+    degree: "Google AI Certificate",
+    schoolName: "Google",
+    graduationYear: "May 2026",
+  },
+     {
+    id: "edu-4",
+    degree: "AWS Generative AI Applications Professional Certificate",
+    schoolName: "AWS",
+    graduationYear: "September 2026",
+  },
 ];
 
 export const technicalSkills: string[] = [
